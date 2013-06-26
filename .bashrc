@@ -8,3 +8,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+### OSX Hibernation Modes
+alias hibernateon="sudo pmset -a hibernatemode 25"
+alias hibernateoff="sudo pmset -a hibernatemode 3"
