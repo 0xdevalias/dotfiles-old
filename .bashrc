@@ -12,3 +12,4 @@ alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 ### OSX Hibernation Modes
 alias hibernateon="sudo pmset -a hibernatemode 25"
 alias hibernateoff="sudo pmset -a hibernatemode 3"
+alias hibernatecheck="pmset -g | grep hibernate"
