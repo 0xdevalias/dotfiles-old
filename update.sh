@@ -5,3 +5,4 @@ brew update
 
 echo 'Updating Ruby Gems..'
 sudo gem update
+
