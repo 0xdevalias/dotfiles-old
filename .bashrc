@@ -24,5 +24,6 @@ alias gl="gl1"
 
 # Homebrew
 alias brewdir="cd $(brew --prefix) && pwd"
+alias brewcellardir="cd $(brew --prefix)/Cellar && pwd"
 alias brewcachedir="cd /Library/Caches/Homebrew && pwd"
 alias caskdir="cd $(brew --prefix)/Library/Taps/phinze-cask && pwd"
