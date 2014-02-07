@@ -1,6 +1,12 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+### Bash Completions
+# Vagrant-Bash-Completion (https://github.com/kura/vagrant-bash-completion)
+if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
+    source `brew --prefix`/etc/bash_completion.d/vagrant
+fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
