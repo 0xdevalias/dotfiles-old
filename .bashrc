@@ -27,3 +27,6 @@ alias brewdir="cd $(brew --prefix) && pwd"
 alias brewcellardir="cd $(brew --prefix)/Cellar && pwd"
 alias brewcachedir="cd /Library/Caches/Homebrew && pwd"
 alias caskdir="cd $(brew --prefix)/Library/Taps/phinze-cask && pwd"
+
+# RVM
+# rvm autolibs homebrew
