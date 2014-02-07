@@ -30,3 +30,8 @@ alias caskdir="cd $(brew --prefix)/Library/Taps/phinze-cask && pwd"
 
 # RVM
 # rvm autolibs homebrew
+
+# Lair
+alias lairstart="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./start.sh 0.0.0.0"
+alias lairstop="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./stop.sh"
+export MONGO_URL='mongodb://lair:EXAMPLEPASSWORD@127.0.0.1:11014/lair?ssl=true'
