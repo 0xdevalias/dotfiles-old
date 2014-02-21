@@ -10,6 +10,11 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Hosts
+alias hosts="sudo vi /private/etc/hosts"
+alias edit_hosts="sudo vi /private/etc/hosts"
+alias cat_hosts="cat /private/etc/hosts"
+
 ### Sublime Text Editor
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
@@ -40,4 +45,4 @@ alias caskdir="cd $(brew --prefix)/Library/Taps/phinze-cask && pwd"
 # Lair
 alias lairstart="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./start.sh 0.0.0.0"
 alias lairstop="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./stop.sh"
-export MONGO_URL='mongodb://lair:EXAMPLEPASSWORD@127.0.0.1:11014/lair?ssl=true'
+export MONGO_URL='mongodb://lair:s3cUr3l41r@127.0.0.1:11014/lair?ssl=true'
