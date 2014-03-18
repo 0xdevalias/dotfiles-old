@@ -1,20 +1,26 @@
 
 # Fix path issues for homebrew postgresql under lion/etc
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
+# rbenv (https://github.com/sstephenson/rbenv)
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Bash-Completion (http://bash-completion.alioth.debian.org/)
+# Normal Location: /usr/local/etc/bash_completion.d
+# Brew Location: /usr/local/share/bash-completion/completions
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+# Theoretically shouldn't need to manually do this..?
+# if [ -f /usr/local/etc/bash_completion.d ]; then
+#   . /usr/local/etc/bash_completion.d/brew
+# fi
+### Bash Completions
+# Vagrant-Bash-Completion (https://github.com/kura/vagrant-bash-completion)
+# Should be loaded by bash-completion automagically
+# if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
+#     source `brew --prefix`/etc/bash_completion.d/vagrant
+# fi
 
 # Load bash aliases
 source ~/.bashrc
-
-# RVM
-PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# http://edapx.com/2013/05/23/switching-from-rvm-to-rbenv/
-
-# brew install ruby193
-# rvm mount /usr/local/Cellar/ruby193/1.9.3-p448
-
-# rvm install 1.9.3 --autolibs=enable
-
-# rvm autolibs homebrew
-# rvm automount
