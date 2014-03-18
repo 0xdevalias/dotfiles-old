@@ -4,6 +4,7 @@
 * Enter file to save the key (can name it here)
 * Enter passphrase (recommended)
 * Confirm passphrase
+* **NB:** Ensure permissions set correctly: `chmod 600 filename`
 
 # Add public key to server
 
