@@ -8,20 +8,21 @@ callnote
 dropbox
 eclipse-ide
 evernote
-f-lux
+f-lux (!)
 gitbox
 github
 google-drive
+hipchat
 launchbar
-light-table
-majic (!)
+light-table (!)
+majic
 nosleep
 skype
 sourcetree
 spotify
 steam
 synergy
-tor-browser
+tor-browser (!)
 totalfinder
 totalspaces
 totalterminal
@@ -31,4 +32,4 @@ vagrant
 virtualbox
 vlc
 wireshark
-zap-proxy
+zap-proxy (!)
