@@ -1,3 +1,5 @@
+cd ~/.dotfiles
+
 echo Updating homebrew list files..
 brew list > brew.list
 brew tap > brew-tap.list

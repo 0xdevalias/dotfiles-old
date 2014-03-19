@@ -12,10 +12,9 @@ drush
 exiftool
 fltk
 freetype
-fuse4x
-fuse4x-kext
 gdbm
 gettext
+glib
 gmp
 gmp4
 gnutls
@@ -26,6 +25,7 @@ jpeg
 jpeg-turbo
 kismet
 legit
+libffi
 libmpc08
 libntlm
 libplist
@@ -52,6 +52,7 @@ ntfs-3g
 opencv
 openssl
 ossp-uuid
+osxfuse
 p11-kit
 pcre
 phantomjs
@@ -69,6 +70,7 @@ rbenv-bundler
 readline
 ruby-build
 squashfs
+sshfs
 tiger-vnc
 usbmuxd
 vagrant-completion
