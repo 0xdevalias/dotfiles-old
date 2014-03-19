@@ -27,8 +27,8 @@ alias hibernatecheck="pmset -g | grep hibernate"
 
 ### SSHFS
 alias unsshfs="umount -f ~/mnt/ssh/"
-alias sshfs-wlpc="sshfs wlpc:/ ~/mnt/wlpc"
-alias unsshfs-wlpc="umount -f ~/mnt/wlpc/"
+alias sshfs-wlpc="sshfs wlpc:/ ~/mnt/wlpc && sleep 1 && cd ~/mnt/wlpc && pwd && ls"
+alias unsshfs-wlpc="umount -f ~/mnt/wlpc/ && ls ~/mnt/wlpc"
 
 ### Sublime Text Editor
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
