@@ -67,6 +67,10 @@ rails-completion
 rake-completion
 rbenv
 rbenv-bundler
+rbenv-gemset
+rbenv-use
+rbenv-vars
+rbenv-whatis
 readline
 ruby-build
 squashfs
