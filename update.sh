@@ -1,10 +1,13 @@
 #! /bin/sh
 
-echo 'Updating Homebrew..'
-brew update
-
 echo 'Updating Ruby Gems..'
 sudo gem update
 
-echo 'Updating RVM'
-rvm get stable
+echo 'Updating Homebrew..'
+brew update
+
+echo 'Updating Homebrew Lists..'
+~/.dotfiles/brew_lists.sh
+
+#echo 'Updating RVM'
+#rvm get stable
