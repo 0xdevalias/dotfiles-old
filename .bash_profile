@@ -1,6 +1,6 @@
 
-# Fix path issues for homebrew postgresql under lion/etc
-PATH=/usr/local/sbin:/usr/local/bin:$PATH
+# Enable rbenv shims, Fix path issues for homebrew postgresql under lion/etc
+PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:$PATH
 
 # rbenv (https://github.com/sstephenson/rbenv)
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
