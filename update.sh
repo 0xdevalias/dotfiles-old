@@ -9,5 +9,8 @@ brew update
 echo 'Updating Homebrew Lists..'
 ~/.dotfiles/brew_lists.sh
 
+echo 'Updating npm List..'
+~/.dotfiles/npm_list.sh
+
 #echo 'Updating RVM'
 #rvm get stable
