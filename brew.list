@@ -1,4 +1,5 @@
 aircrack-ng
+android-sdk
 autoconf
 automake
 bash-completion
@@ -76,8 +77,8 @@ ruby-build
 squashfs
 sshfs
 tiger-vnc
+typesafe-activator
 usbmuxd
 vagrant-completion
 wget
-x3270
 xz
