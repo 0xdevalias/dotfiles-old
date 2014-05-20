@@ -1,7 +1,6 @@
 # Generate SSH keyfiles
 
-* **Command:** `ssh-keygen -r rsa -b 4096`
-* Enter file to save the key (can name it here)
+* **Command:** `ssh-keygen -t rsa -b 4096 -f servername_user_rsa`
 * Enter passphrase (recommended)
 * Confirm passphrase
 * **NB:** Ensure permissions set correctly: `chmod 600 filename`
@@ -20,7 +19,10 @@
 * **File:** ~/.ssh/config
 * **Purpose:** Add 'easy names' for each host
 
-    Host easy-name
-    Hostname full.server.name.net
-    User my-username
-    IdentityFile ~/.ssh/my_private_key_rsa
+```
+Host easy-name
+Hostname full.server.name.net
+User my-username
+IdentityFile ~/.ssh/my_private_key_rsa
+ForwardAgent yes
+```
