@@ -1,6 +1,8 @@
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+alias reloadbash="source ~/.bash_profile && echo .bash_profile reloaded."
+
 # Git
 alias gl1="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gl2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
@@ -28,6 +30,8 @@ alias hibernatecheck="pmset -g | grep hibernate"
 ### SSHFS
 alias unsshfs="umount -f ~/mnt/ssh/"
 alias sshfs-wlpc-staging="sshfs wlpc-staging:/ ~/mnt/wlpc && sleep 1 && cd ~/mnt/wlpc && pwd && ls"
+alias sshfs-wlpc-demodashboard="sshfs wlpc-demodashboard:/var/www/html/dashboard ~/mnt/wlpc && sleep 1 && cd ~/mnt/wlpc && pwd && ls"
+alias sshfs-wlpc-demodashboard-staging="sshfs wlpc-demodashboard-staging:/var/www/html/dashboard-staging ~/mnt/wlpc && sleep 1 && cd ~/mnt/wlpc && pwd && ls"
 alias unsshfs-wlpc="umount -f ~/mnt/wlpc/ && ls ~/mnt/wlpc"
 
 ### Sublime Text Editor

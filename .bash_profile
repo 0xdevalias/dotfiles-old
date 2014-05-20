@@ -2,6 +2,8 @@
 # Enable rbenv shims, Fix path issues for homebrew postgresql under lion/etc
 PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:$PATH
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # rbenv (https://github.com/sstephenson/rbenv)
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -11,6 +13,10 @@ PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:$PATH
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+if [ -f $(brew --prefix)/etc/bash_completion.d ]; then
+  source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+fi
+
 # Theoretically shouldn't need to manually do this..?
 # if [ -f /usr/local/etc/bash_completion.d ]; then
 #   . /usr/local/etc/bash_completion.d/brew
