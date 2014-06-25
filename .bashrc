@@ -1,5 +1,5 @@
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH:/usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/genghisapp-2.3.11/bin"
 
 alias reloadbash="source ~/.bash_profile && echo .bash_profile reloaded."
 
@@ -26,6 +26,9 @@ alias hibernatecheck="pmset -g | grep hibernate"
 
 # Pentest
 # alias decode_bigip="echo 1577258443.36895.0000 | perl -ne'print join ".", map {hex} reverse ((sprintf "%08x", split /\./, $_) =~ /../g);'"
+
+### SSH
+alias sshlist="cat ~/.ssh/config | grep \"Host \""
 
 ### SSHFS
 alias unsshfs="umount -f ~/mnt/ssh/"
