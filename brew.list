@@ -7,7 +7,9 @@ brew-cask
 brew-desc
 brew-pip
 casperjs
+chromedriver
 cmake
+dirmngr
 doxygen
 drush
 exiftool
@@ -18,7 +20,9 @@ gettext
 glib
 gmp
 gmp4
+gnupg
 gnutls
+gpg-agent
 graphviz
 heroku-toolbelt
 john
@@ -26,7 +30,11 @@ jpeg
 jpeg-turbo
 kismet
 legit
+libassuan
 libffi
+libgcrypt
+libgpg-error
+libksba
 libmpc08
 libntlm
 libplist
@@ -35,6 +43,7 @@ librsync
 libtasn1
 libtool
 libusb
+libusb-compat
 libxml2
 libyaml
 lynx
@@ -57,12 +66,14 @@ osxfuse
 p11-kit
 pcre
 phantomjs
+pinentry
 pkg-config
 play
 popt
 postgresql
 privoxy
 proxychains-ng
+pth
 qt
 rails-completion
 rake-completion
@@ -73,6 +84,7 @@ rbenv-use
 rbenv-vars
 rbenv-whatis
 readline
+ruby
 ruby-build
 squashfs
 sshfs
@@ -81,4 +93,5 @@ typesafe-activator
 usbmuxd
 vagrant-completion
 wget
+wkhtmltopdf
 xz
