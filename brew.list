@@ -3,6 +3,7 @@ android-sdk
 autoconf
 automake
 bash-completion
+boot2docker
 brew-cask
 brew-desc
 brew-pip
@@ -10,9 +11,11 @@ casperjs
 chromedriver
 cmake
 dirmngr
+docker
 doxygen
 drush
 exiftool
+fig
 fltk
 freetype
 gdbm
@@ -64,6 +67,7 @@ openssl
 ossp-uuid
 osxfuse
 p11-kit
+panamax
 pcre
 phantomjs
 pinentry
@@ -86,6 +90,7 @@ rbenv-whatis
 readline
 ruby
 ruby-build
+sbt
 squashfs
 sshfs
 tiger-vnc
