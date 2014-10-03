@@ -2,6 +2,31 @@
 export PATH="/usr/local/heroku/bin:$PATH:/usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/genghisapp-2.3.11/bin"
 
 alias reloadbash="source ~/.bash_profile && echo .bash_profile reloaded."
+alias plainpaste="(pbpaste | pbcopy) && echo Clipboard content converted to plaintext"
+
+showlocked() {
+  if [ -z "$1" ]
+    then
+      local dir="."
+    else
+      local dir="$1"
+  fi
+
+  find "$dir" -flags uchg
+}
+
+unlock() {
+  if [ -z "$1" ]
+    then
+      local dir="."
+    else
+      local dir="$1"
+  fi
+
+  chflags -R nouchg "$dir"
+}
+
+alias unlocktrash="unlock ~/.Trash && echo All files in trash unlocked"
 
 # Git
 alias gl1="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
