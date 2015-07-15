@@ -1,6 +1,9 @@
 caskroom/cask
 homebrew/boneyard
 homebrew/completions
+homebrew/fuse
 homebrew/php
 homebrew/versions
+homebrew/x11
+jenv/jenv
 telemachus/desc

@@ -1,7 +1,14 @@
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH:/usr/local/Cellar/ruby/2.1.2/lib/ruby/gems/2.1.0/gems/genghisapp-2.3.11/bin"
 
-alias reloadbash="source ~/.bash_profile && echo .bash_profile reloaded."
+# http://www.berserkcomputers.co.uk/save-time-machine-backups-to-a-network-share-on-another-computer/
+# TODO: Write better functions for these:
+# sudo tmutil setdestination /Volumes/{mounted-disk-image}
+# alias enableUnsupportedDrives="defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1"
+# http://hints.macworld.com/article.php?story=20080420211034137
+# hdiutil create -library SPUD -size $SIZESPEC -fs Journaled HFS+ -type SPARSEBUNDLE -volname darklink1.sparsebundle
+
+alias reloadbash="echo .bash_profile Reloading.. && exec bash -l" #"source ~/.bash_profile && echo .bash_profile reloaded."
 alias plainpaste="(pbpaste | pbcopy) && echo Clipboard content converted to plaintext"
 
 showlocked() {
@@ -27,6 +34,22 @@ unlock() {
 }
 
 alias unlocktrash="unlock ~/.Trash && echo All files in trash unlocked"
+
+# http://superuser.com/questions/443989/mac-per-kext-memory-extension-aka-which-kext-is-leaky#comment1037660_448665
+kernelMemory() {
+  kextstat | awk 'NR==1{ printf "%10s %s\n", $5, $6; } NR!=1{ printf "%10d %s\n", $5, $6; }' | sort -n
+}
+
+title() {
+  echo -n -e "\033]0;$1\007"
+}
+
+# SSH
+
+ssh-keyinit() {
+  cd ~/.ssh
+  ssh-add github_alias1_rsa bitbucket_devalias_rsa
+}
 
 # Git
 alias gl1="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
@@ -74,3 +97,8 @@ alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias lairstart="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./start.sh 0.0.0.0"
 alias lairstop="cd /Users/alias/pentest/lair-v1.0.2-darwin-x64 && pwd && ./stop.sh"
 export MONGO_URL='mongodb://lair:s3cUr3l41r@127.0.0.1:11014/lair?ssl=true'
+
+# Muse
+export PATH="$PATH:/Applications/Muse"
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Applications/Muse"
+alias muse-start="muse-io --osc osc.udp://localhost:5001,osc.udp://localhost:5002"
